@@ -8,6 +8,16 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
+// routes
+const todoRoute = require("./routes/todo");
+
+// apis
+app.get("/", (req, res) => {
+  res.send("Todolist api");
+});
+
+app.use("/todo", todoRoute);
+
 // connect to mongodb
 mongoose
   .connect(process.env.MONGO_URL, {
