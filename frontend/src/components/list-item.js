@@ -16,8 +16,6 @@ function ListItem(props) {
         />
       </div>
 
-      {console.log(props)}
-
       {editMode ? (
         <input
           value={newValue}
