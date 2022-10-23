@@ -139,7 +139,7 @@ function List() {
           }}
         />
 
-        <button type="submit">Add</button>
+        <button type="submit">Add todo</button>
       </form>
       {data.map((val, i) => (
         <ListItem
